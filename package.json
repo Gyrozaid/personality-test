@@ -1,0 +1,14 @@
+{
+    "name": "personality",
+    "type": "module",
+    "scripts": {
+        "start": "node server/index.js"
+    },
+    "dependencies": {
+        "dotenv": "16.3.1",
+        "express": "^4.18.1",
+        "mongodb": "^6.3.0",
+        "morgan": "^1.10.0",
+        "require": "^0.4.4"
+    }
+}

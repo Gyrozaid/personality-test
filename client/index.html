@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Personality</title>
+        <script type="module" src="main.js" defer></script>
+        <link rel="stylesheet" href="main.css" />
+    
+    </head>
+    <body>
+        <center>
+        <h1>Fun with Personality!</h1>
+        
+        <label for="name">Enter your name here:</label><br>
+        <input type="text" id="name" />
+        <input hidden type="button" value="Enter" id="enterName" />
+        <p hidden id="options">Which personality test would you like to take?</p>
+        <input hidden type="radio" id="big5" name="type" value="big5">
+        <label hidden for="big5" id="big5label">big 5</label><br>
+        
+
+        <p hidden id="key">
+            Key<br>
+            SA - strongly agree<br>
+            A - agree<br>
+            N - neutral<br>
+            D - disagree<br>
+            SD - strongly disagree<br>
+        </p>
+
+        
+        <div hidden id="test"></div>
+        <input hidden type="button" value="Calculate!" id="calculate" />
+        <input type="button" value="Reset" id="reset" /> <br>
+        <input hidden type="button" value="Save Score" id="save" />
+        <input hidden type="button" value="Delete all of current users scores" id="del" />
+        <input type="button" value="Compare with a friend" id="comp">
+        <div hidden id = "descriptions">
+            <p id="saved"></p>
+            <p>
+            <b>Extraversion</b> - how outgoing you are, how much positive emotion you feel<br>
+            <b>Agreeableness</b> - how polite you are, how compassionate and empathetic you are<br>
+            <b>Conscientiousness</b> - how hard working you are, how orderly and clean you are<br>
+            <b>Neuroticism</b> - how much negative emotion you feel<br>
+            <b>Openness</b> - how willing you are to experience new experiences, how often you think abstractly<br>
+            </p>
+        </div>
+        <div hidden id="score-wrapper">
+        </div>
+
+        <div hidden id="compare">
+            <h3>Compare personalities with your friend!</h3>
+            <label for="player1">Enter your name here:</label><br>
+            <input type="text" id="player1" /><br>
+            <label for="player2">Enter your friend's name here:</label><br>
+            <input type="text" id="player2" /><br>
+            <input type="button" value="Compare!" id="calcComp">
+            <div id="results"></div>
+        </div>
+
+        </center>
+    </body>
+<html>

@@ -1,0 +1,18 @@
+#test {
+    width: 600px;
+    margin: auto;
+}
+
+.question {
+    background-color: yellow;
+}
+
+.option {
+    height: 20px;
+}
+
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: 'Helvetica';
+}
